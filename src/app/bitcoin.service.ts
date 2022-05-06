@@ -7,10 +7,10 @@ interface Response {
   };
   bpi: {
     USD: {
-      rate_float: string;
+      rate: string;
     };
     BRL: {
-      rate_float: string;
+      rate: string;
     };
   };
 }

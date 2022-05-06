@@ -16,7 +16,7 @@
   </tr>
   <tr *ngFor="let rates of bitcoinService.list">
     <td>{{ rates.time.updated }}</td>
-    <td>{{ rates.bpi.USD.rate_float }}</td>
-    <td>{{ rates.bpi.BRL.rate_float }}</td>
+    <td>$ {{ rates.bpi.USD.rate }}</td>
+    <td>R$ {{ rates.bpi.BRL.rate }}</td>
   </tr>
 </table>
