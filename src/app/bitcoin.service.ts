@@ -15,7 +15,7 @@ interface Response {
   };
 }
 
-const TEN_SECONDS = 60000;
+const ONE_MINUTE = 60000;
 
 @Injectable()
 export class BitcoinService {
@@ -28,7 +28,7 @@ export class BitcoinService {
   }
 
   startTimer() {
-    this.timer = setInterval(() => this.update(), TEN_SECONDS);
+    this.timer = setInterval(() => this.update(), ONE_MINUTE);
   }
 
   stopTimer() {
