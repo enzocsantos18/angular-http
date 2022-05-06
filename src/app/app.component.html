@@ -1,3 +1,22 @@
-<hello name="{{ name }}"></hello>
-<h2>Github enzo`s repos</h2>
-<table border="1"></table>
+<header>
+  <h2>BitHttpCoin</h2>
+
+  <div>
+    <h3>Criado por:</h3>
+    <p>Nome: Enzo de Carvalho Santos</p>
+    <p>RA: 0050832011007</p>
+  </div>
+</header>
+
+<table>
+  <tr>
+    <th>Data/Hora</th>
+    <th>USD</th>
+    <th>BRL</th>
+  </tr>
+  <tr *ngFor="let rates of bitcoinService.list">
+    <td>{{ rates.time.updated }}</td>
+    <td>{{ rates.bpi.USD.rate_float }}</td>
+    <td>{{ rates.bpi.BRL.rate_float }}</td>
+  </tr>
+</table>

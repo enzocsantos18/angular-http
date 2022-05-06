@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { BitcoinService } from './bitcoin.service';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +7,5 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Http client demo';
+  constructor(public bitcoinService: BitcoinService) {}
 }

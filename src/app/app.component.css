@@ -1,3 +1,26 @@
-p {
-  font-family: Lato;
+table {
+  border-collapse: collapse;
+  width: 95vw;
+}
+
+header {
+  background-color: lightgreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  margin-bottom: 20px;
+  box-shadow: 8px 12px 23px -9px rgba(0, 0, 0, 0.59);
+}
+
+th {
+  background-color: lightgreen;
+}
+
+td,
+th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
 }
